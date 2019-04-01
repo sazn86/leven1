@@ -7,4 +7,3 @@ def odometer(N):
         elif i % 2 == 0 and i > 0:
             z = z + N[i] * (N[i+1]-N[i-1])
     return (z)
-odometer(N)
