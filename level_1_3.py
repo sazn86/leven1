@@ -21,7 +21,7 @@ def ConquestCampaign(N, M, L, battalion):
             pole[i].append(0)
 # Начальные координаты - первые удары
     for i in range(0,(L*2),2):
-        pole[battalion[i]][battalion[i+1]] = 1
+        pole[(battalion[i]-1)][(battalion[i+1]-1)] = 1
     for k in range(N*M):
         print (pole)
         if  proverka(N,M,pole) == 0:
@@ -40,4 +40,4 @@ def ConquestCampaign(N, M, L, battalion):
                     if (i+1) < N and pole[(i+1)][y] == 0:
                         pole[(i+1)][y] = 1
     print (schetchik)
-ConquestCampaign(3,4,2,[1,1,2,3])
+ConquestCampaign(3,4,2,[2,2,3,4])
