@@ -27,9 +27,13 @@ def ConquestCampaign(N, M, L, battalion):
     for i in range(N):
         for y in range(M):
             if pole[i][y] >= 2:
-                pole[i][(y-1)] = 1
-                pole[i][(y+1)] = 1
-                pole[(i+1)][y] = 1
-                pole[(i-1)][y] = 1
+                if (y-1) >= 0:
+                    pole[i][(y-1)] = 1
+                if (y+1) < M:
+                    pole[i][(y+1)] = 1
+                if (i-1) >= 0:
+                    pole[(i-1)][y] = 1
+                if (i+1) < N:
+                    pole[(i+1)][y] = 1
     print (pole)
 ConquestCampaign(3,4,2,[1,1,2,3])
