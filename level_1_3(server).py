@@ -8,7 +8,7 @@ def ConquestCampaign(N, M, L, battalion):
                 if c[i][y] == 0:
                     return 1
         return 0
-#Фенкция прибавление единички к не нулевым значениям
+#Функция прибавления единички к не нулевым значениям
     def plus_1(a,b,c):
         for i in range(a):
             for y in range(b):
