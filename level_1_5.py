@@ -6,7 +6,7 @@ def PatternUnlock(N, hits):
             for k in range(3):
                 if hits[i] == key[j][k]:
                     x1 = j
-                    y1 = k
+s                    y1 = k
         for j in range(3):
             for k in range(3):
                 if hits[(i+1)] == key[j][k]:
