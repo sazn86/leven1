@@ -6,7 +6,7 @@ def PatternUnlock(N, hits):
             for k in range(3):
                 if hits[i] == key[j][k]:
                     x1 = j
-s                    y1 = k
+                    y1 = k
         for j in range(3):
             for k in range(3):
                 if hits[(i+1)] == key[j][k]:
@@ -16,6 +16,5 @@ s                    y1 = k
             summa = summa + 1
         else:
             summa = summa + 1.41421
-    print (x1,y1,x2,y2)
     print (summa)
 PatternUnlock(10, [1, 2, 3, 4, 5, 6, 2, 7, 8, 9])
