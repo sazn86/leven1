@@ -16,9 +16,7 @@ def PatternUnlock(N, hits):
             summa = summa + 1
         else:
             summa = summa + 1.41421
-    print (summa)
     summa = int(summa * 100000)
     summa = str(summa)
     sum2 = summa.replace("0", "")
-    print (sum2)
-PatternUnlock (10, [1, 2, 3, 4, 5, 6, 2, 7, 8, 9,])
+    return (sum2)
