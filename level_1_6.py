@@ -1,17 +1,25 @@
 def WordSearch(len, s, subs):
     x = list(s)
     k = 0
+    l = 0
     y = []
     for i in range(7):
         y.append([])
-        for j in range(k,(k+len)):
+        z = 0
+        for j in range(l,(l+len)):
             if x[j] == ' ':
                 k = j
+                z = 1
+        if z == 0:
+            k = k + len + 1
         if x[k] == ' ':
-            for a in range((k+1),(k+2+len)):
+            for a in range(l,(k)):
                 y[i].append(x[a])
+            l = k + 1
         else:
-            for a in range((k),(k+1+len)):
+            for a in range(l,(k)):
                 y[i].append(x[a])
-    print (y)
+            l =  k
+        print (k)
+        print (y)
 WordSearch(12, "1) строка разбивается на набор строк через выравнивание по заданной ширине.", "строк")
