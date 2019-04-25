@@ -18,7 +18,7 @@ def WordSearch(len1, s, subs):
                 k = j
                 z = 1
         if z == 0:
-            k = k + len1 + 1
+            k = k + len1
         # Вносим значения в слот (список):
         if k < len(x):
             for a in range(l,(k)):
