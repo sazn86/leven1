@@ -32,7 +32,6 @@ def WordSearch(len1, s, subs):
             for a in range(l,(k)):
                 y[i].append(x[a])
             break
-    print (y)
     for i in range((len(y))):
         index =  0
         index = (''.join(y[i]))
@@ -42,7 +41,5 @@ def WordSearch(len1, s, subs):
             m.append(0)
         else:
             m.append(1)
-        print (''.join(y[i]))
-    print (m)
-    #return m
-WordSearch(8, "1) строка разбивается на набор строк через выравнивание по заданной ширине.", 'строк')
+    return m
+WordSearch(18, "1) строка разбивается на набор строк через выравнивание по заданной ширине.", 'строк')
