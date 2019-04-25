@@ -4,6 +4,7 @@ def WordSearch(len1, s, subs):
     l = 0
     b = 0
     y = []
+    m = []
     for i in range((len(x))):
         y.append([])
         # Определяем длину одного слотка(списка):
@@ -31,7 +32,12 @@ def WordSearch(len1, s, subs):
             for a in range(l,(k)):
                 y[i].append(x[a])
             break
-    #for i in range(len(y)):
-        #for j in range((len(y[i]))
     print (y)
-WordSearch(12, "1) строка разбивается на набор строк через выравнивание по заданной ширине.", "строк")
+    for i in range((len(y))):
+        index =  0
+        index = (''.join(y[i])).find(subs)
+        if index == 0:
+            m.append(1)
+        else:
+            m.append(0)
+    return m
