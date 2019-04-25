@@ -42,4 +42,3 @@ def WordSearch(len1, s, subs):
         else:
             m.append(1)
     return m
-WordSearch(18, "1) строка разбивается на набор строк через выравнивание по заданной ширине.", 'строк')
