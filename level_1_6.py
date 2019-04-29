@@ -17,9 +17,10 @@ def WordSearch(len1, s, subs):
             if x[j] == ' ':
                 k = j
                 z = 1
-        if z == 0:
+        if z == 0 and l != 0:
             k = k + len1 + 1
-
+        elif z == 0 and l == 0:
+            k = k + len1
         # Вносим значения в слот (список):
         if k < len(x):
             for a in range(l,(k)):
@@ -46,4 +47,4 @@ def WordSearch(len1, s, subs):
         print (''.join(y[i]))
     print (m)
     #return m
-WordSearch(3, '12345', '123')
+WordSearch(12, '1) строка разбивается на набор строк через выравнивание по заданной ширине.', 'строк')
