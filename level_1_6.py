@@ -47,4 +47,4 @@ def WordSearch(len1, s, subs):
         print (''.join(y[i]))
     print (m)
     #return m
-WordSearch(12, '1) stroka razbivaetsya na nabor strok cherez vyravnivanie po zadannoj shirine.', 'strok')
+WordSearch(3, '12345', '123')
