@@ -13,7 +13,7 @@ def WordSearch(len1, s, subs):
             b = l + len1 + 1
         else:
             b = len(x)
-        for j in range(l,(b)):
+        for j in range(l,b):
             if x[j] == ' ':
                 k = j
                 z = 1
@@ -47,4 +47,4 @@ def WordSearch(len1, s, subs):
         print (''.join(y[i]))
     print (m)
     #return m
-WordSearch(12, '1) stroka razbivaetsya na nabor strok cherez vyravnivanie po zadannoj shirine.', 'strok')
+WordSearch(12, 'strok cherez vyravnivanie po zadannoj shirine.', 'strok')

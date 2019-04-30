@@ -9,8 +9,8 @@ def WordSearch(len1, s, subs):
         y.append([])
         # Определяем длину одного слотка(списка):
         z = 0
-        if (l + len1) <= len(x):
-            b = l + len1
+        if (l + len1 + 1) <= len(x):
+            b = l + len1 + 1
         else:
             b = len(x)
         for j in range(l,(b)):
@@ -19,7 +19,7 @@ def WordSearch(len1, s, subs):
                 z = 1
         if z == 0 and l != 0:
             k = k + len1 + 1
-        if z == 0 and l == 0:
+        elif z == 0 and l == 0:
             k = k + len1
         # Вносим значения в слот (список):
         if k < len(x):
