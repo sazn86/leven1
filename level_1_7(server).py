@@ -6,5 +6,4 @@ def SumOfThe(N, data):
         for k in range(0,N):
             x[i] = 0
         if sum(x) == data[i]:
-            print (data[i])
             return (data[i])
